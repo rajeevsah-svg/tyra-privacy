@@ -3,81 +3,176 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tyra Privacy Policy</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<title>Tyra’s Emotional Journey</title>
+<meta name="description" content="A hand-drawn game where children rescue ten trapped feelings and win their superpowers. Made by kids, with a little help from AI.">
+<meta property="og:title" content="Tyra’s Emotional Journey">
+<meta property="og:description" content="Rescue the feelings. Find your superpowers. A hand-drawn game made by kids, with a little help from AI.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="icon" href="assets/icon.png">
 <style>
-/* Layout: one readable column on squared sketchbook paper; the hand-lettered title is the only flourish */
 :root{
-  --paper:#f7f8fa; --grid:#e3e7ed; --ink:#2f333b; --soft:#5d6470; --line:#cfd4dc; --heart:#c8203c; --card:#ffffff;
-  --display:"Caveat","Segoe Print","Bradley Hand",cursive;
-  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --paper:#f7f8fa; --grid:#e3e7ed; --ink:#2f333b; --soft:#555c68; --line:#cfd4dc; --heart:#c8203c; --card:#ffffff; --gold:#b98a1c;
+  --display:"Segoe Print","Bradley Hand","Chalkboard SE","Comic Sans MS",cursive;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
-@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --paper:#1c1e23; --grid:#262a31; --ink:#e6e8ec; --soft:#a9afba; --line:#3a3f48; --heart:#ff6b81; --card:#23262c; color-scheme:dark } }
-:root[data-theme="dark"]{ --paper:#1c1e23; --grid:#262a31; --ink:#e6e8ec; --soft:#a9afba; --line:#3a3f48; --heart:#ff6b81; --card:#23262c; color-scheme:dark }
-body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body);
+@media (prefers-color-scheme: dark){ :root{ --paper:#1c1e23; --grid:#262a31; --ink:#e6e8ec; --soft:#aab0bb; --line:#3a3f48; --heart:#ff6b81; --card:#23262c; --gold:#e0b23c; color-scheme:dark } }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body);
   background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
-main{max-width:40rem;margin:0 auto;background:var(--card);border:1.5px solid var(--ink);border-radius:10px 14px 9px 13px;padding:clamp(20px,5vw,44px)}
-h1{font:700 clamp(2.6rem,9vw,3.6rem)/1 var(--display);margin:0;text-wrap:balance}
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:62rem;margin:0 auto}
+nav{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center;padding:18px 0}
+nav .brand{display:flex;align-items:center;gap:.6rem;font:700 1.15rem var(--display);text-decoration:none;color:inherit;margin-right:auto}
+nav .brand img{width:36px;height:36px;border-radius:9px;border:1.5px solid var(--ink)}
+nav a{color:inherit;text-underline-offset:4px;font-size:.98rem}
+nav a.brand{text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--heart);outline-offset:3px;border-radius:4px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:10px 14px 9px 13px;padding:clamp(20px,4.5vw,40px)}
+.hero{display:grid;gap:clamp(20px,4vw,40px);align-items:center;margin-top:8px}
+.hero img{width:100%;height:auto;display:block;border:1.5px solid var(--ink);border-radius:12px 9px 13px 10px;background:var(--card)}
+h1{font:700 clamp(2.1rem,6.5vw,3.5rem)/1.05 var(--display);margin:0 0 .75rem;text-wrap:balance}
 h1 .heart{color:var(--heart)}
-.meta{color:var(--soft);font-size:.95rem;margin:.5rem 0 1.75rem}
-.summary{border-left:3px solid var(--heart);padding:.25rem 0 .25rem 1rem;margin:0 0 2rem;font-size:1.15rem}
-h2{font:700 1.15rem/1.3 var(--body);margin:2rem 0 .5rem;text-wrap:balance}
-p,ul{margin:0 0 .9rem}
-ul{padding-left:1.2rem}
-li{margin:.25rem 0}
-table{width:100%;border-collapse:collapse;font-size:.98rem;margin:.25rem 0 1rem}
-th,td{text-align:left;vertical-align:top;padding:.55rem .6rem;border-bottom:1px solid var(--line)}
-th{font-weight:700;color:var(--soft);font-size:.82rem;letter-spacing:.04em;text-transform:uppercase}
-.table-wrap{overflow-x:auto}
-a{color:inherit;text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--heart);outline-offset:2px}
-footer{color:var(--soft);font-size:.9rem;margin-top:2.25rem;padding-top:1rem;border-top:1px dashed var(--line)}
+h2{font:700 clamp(1.6rem,4.5vw,2.2rem)/1.15 var(--display);margin:0 0 .75rem;text-wrap:balance}
+h3{font:700 1.1rem/1.3 var(--body);margin:0 0 .3rem}
+p{margin:0 0 1rem}
+.lead{font-size:1.2rem;color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border:1.5px solid var(--ink);border-radius:9px 12px 8px 11px;background:var(--ink);color:var(--paper);font:700 1rem var(--body);text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn[aria-disabled="true"]{opacity:.75;cursor:default}
+.note{color:var(--soft);font-size:.95rem}
+section{margin-top:clamp(28px,5vw,48px)}
+.cols{display:grid;gap:16px}
+.cols .card{padding:clamp(16px,3.5vw,26px)}
+.shots{display:grid;gap:14px;grid-template-columns:1fr;margin-top:1rem}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border:1.5px solid var(--ink);border-radius:10px 8px 11px 9px}
+.shots figcaption{color:var(--soft);font-size:.92rem;margin-top:.35rem}
+.dots{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0 0}
+.dots span{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--ink);display:inline-block}
+.quote{border-left:3px solid var(--heart);padding:.2rem 0 .2rem 1rem;font-size:1.15rem;margin:1.25rem 0}
+ul.tick{list-style:none;padding:0;margin:0 0 1rem}
+ul.tick li{padding-left:1.6rem;position:relative;margin:.4rem 0}
+ul.tick li::before{content:"\2713";position:absolute;left:0;color:var(--heart);font-weight:700}
+footer{margin:48px 0 0;padding:20px 0 40px;border-top:1.5px dashed var(--line);color:var(--soft);font-size:.92rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+footer a{color:inherit;text-underline-offset:3px}
+@media (min-width:720px){
+  .hero{grid-template-columns:1.05fr 1fr}
+  .cols.three{grid-template-columns:repeat(3,1fr)}
+  .cols.two{grid-template-columns:repeat(2,1fr)}
+  .shots{grid-template-columns:repeat(2,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<main>
-  <h1>Tyra <span class="heart">&#9829;</span> Privacy Policy</h1>
-  <p class="meta">For the Tyra’s Emotional Journey app for Android. Effective 26 October 2026.</p>
+<div class="wrap">
 
-  <p class="summary"><strong>Tyra collects no personal data.</strong> The app has no accounts, no ads, no analytics and no internet connection. Nothing you do in the game leaves your device.</p>
+<nav aria-label="Main">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="">Tyra’s Emotional Journey</a>
+  <a href="#game">The game</a>
+  <a href="#story">Our story</a>
+  <a href="#community">Community</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <h2>What the app keeps on your device</h2>
-  <p>To let you carry on where you left off, the game saves three small things in the app's own storage on your phone or tablet:</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th scope="col">Item</th><th scope="col">Why</th></tr></thead>
-      <tbody>
-        <tr><td>The name you give the hero</td><td>So the game can greet her by name next time</td></tr>
-        <tr><td>The furthest level reached</td><td>For the Continue button</td></tr>
-        <tr><td>Whether the music is on or off</td><td>So your choice is remembered</td></tr>
-      </tbody>
-    </table>
+<header class="card hero">
+  <div>
+    <h1>Rescue the feelings. <span class="heart">&#9829;</span> Find your superpowers.</h1>
+    <p class="lead">Tyra’s Emotional Journey is a hand-drawn adventure for children aged 5 and up. Ten feelings are trapped in ten little worlds. Rescue each one and it becomes a positive friend, and gives you a superpower.</p>
+    <p class="note">Free. No ads, no accounts, no internet needed.</p>
+    <div class="btns">
+      <a class="btn" href="#game">See the game</a>
+      <span class="btn alt" aria-disabled="true">Google Play: coming soon</span>
+    </div>
   </div>
-  <p>These stay on the device. They are never sent to the developer or to anyone else. Uninstalling the app, or clearing its storage in your device settings, deletes them.</p>
+  <img src="assets/hero.jpg" alt="Tyra, a girl in a long white dress with a golden crown and a red heart, standing beside ten small smiling feelings in different colours" width="1024" height="500">
+</header>
 
-  <h2>What the app does not do</h2>
-  <ul>
-    <li>It does not ask for, collect or share any personal information, including names, email addresses, location, contacts, photos or device identifiers.</li>
-    <li>It does not use the internet. The app requests no network permission, and everything it needs, including its font and music, is built in.</li>
-    <li>It shows no advertising and contains no in-app purchases.</li>
-    <li>It contains no analytics, tracking or third-party code that could collect data.</li>
-    <li>It requests no device permissions such as camera, microphone or location.</li>
-  </ul>
+<section id="game" aria-labelledby="game-h">
+  <div class="card">
+    <h2 id="game-h">A game about big feelings</h2>
+    <p>Everyone gets lonely, scared, angry or jealous sometimes. In this game those feelings are not enemies. They are characters who got stuck, and Tyra helps them out.</p>
+    <div class="cols three">
+      <div class="card">
+        <h3>1. Meet a feeling</h3>
+        <p class="note" style="margin:0">Each world is built around one hard feeling, such as loneliness, fear, anger or sadness.</p>
+      </div>
+      <div class="card">
+        <h3>2. Solve it with kindness</h3>
+        <p class="note" style="margin:0">Puzzles are solved with the powers Tyra has already won, like Love, Courage and Calm.</p>
+      </div>
+      <div class="card">
+        <h3>3. Win a superpower</h3>
+        <p class="note" style="margin:0">The rescued feeling turns positive, for example frustration into joy, or annoyance into silliness.</p>
+      </div>
+    </div>
+    <div class="shots">
+      <figure><img src="assets/shot-1.jpg" alt="Level one: Tyra meets a small blue feeling beside a big tree, who says “You waited for me…”" width="960" height="540" loading="lazy"><figcaption>Level 1: Loneliness</figcaption></figure>
+      <figure><img src="assets/shot-2.jpg" alt="Level two: Tyra stands on cracking ice beneath icy ledges she can jump onto" width="960" height="540" loading="lazy"><figcaption>Level 2: Fear</figcaption></figure>
+      <figure><img src="assets/shot-3.jpg" alt="Level five: Tyra stands beside a fiery red Anger character under a hanging bucket of water" width="960" height="540" loading="lazy"><figcaption>Level 5: Anger</figcaption></figure>
+      <figure><img src="assets/shot-4.jpg" alt="Level six: Tyra holds a pink balloon beside a pool where a tearful blue feeling cries" width="960" height="540" loading="lazy"><figcaption>Level 6: Sadness</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-  <h2>Children</h2>
-  <p>Tyra’s Emotional Journey is made for children and families. Because the app collects no personal information from anyone, it collects none from children. A parent or guardian can remove everything the game has saved at any time by uninstalling the app or clearing its storage.</p>
+<section aria-labelledby="parents-h">
+  <div class="card">
+    <h2 id="parents-h">For parents and teachers</h2>
+    <p>The game gives children a gentle way to <strong>name</strong> feelings, see that they can <strong>change</strong>, and practise answering them with kindness, courage and humour.</p>
+    <ul class="tick">
+      <li>Free to play, with no ads and no in-app purchases</li>
+      <li>No accounts, no tracking, and no internet connection at all. Nothing leaves the device.</li>
+      <li>Short levels that can be played on their own or together with a grown-up</li>
+      <li>Hand-drawn, calm, and free of violence</li>
+    </ul>
+    <p class="note">Tyra’s Emotional Journey is a game, not therapy or medical advice. If a child is struggling with their feelings, please talk to someone you trust or a qualified professional. Read our <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+</section>
 
-  <h2>Changes to this policy</h2>
-  <p>If a future version of the game ever changes how it handles information, this page will be updated before that version is released, and the effective date above will change.</p>
+<section id="story" aria-labelledby="story-h">
+  <div class="card">
+    <h2 id="story-h">Made by kids. Unfiltered imagination.</h2>
+    <p>This game was dreamed up and designed by two children, with their dad and a little help from AI doing the typing. Every character, feeling and superpower started as a child’s idea.</p>
+    <p class="quote">We believe the next generation will move from coders to <strong>imagineers</strong>: the people who dream up new worlds and, with AI, build them.</p>
+    <p>Tyra is our first world. We hope it shows what children can create when nobody tells them to filter their ideas.</p>
+    <div class="dots" aria-hidden="true">
+      <span style="background:#c8203c"></span><span style="background:#1f6fe0"></span><span style="background:#e0b23c"></span><span style="background:#4fb39b"></span><span style="background:#8fc9ec"></span><span style="background:#f0c43a"></span><span style="background:#8b5fc9"></span><span style="background:#e889ab"></span><span style="background:#f08a24"></span><span style="background:#6bc43a"></span>
+    </div>
+  </div>
+</section>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy can be sent to the developer at <a href="mailto:rajeev.sah@gmail.com">rajeev.sah@gmail.com</a>.</p>
+<section id="community" aria-labelledby="com-h">
+  <div class="cols two">
+    <div class="card">
+      <h2 id="com-h">Imagineers’ corner</h2>
+      <p>We would love to bring together like-minded families, teachers and young creators to share unfiltered ideas for good. Could be a game, a story, a gadget or a wild plan to make the world kinder.</p>
+      <p>If that sounds like you, tell us you’re interested. We’ll only use your email to write back about this.</p>
+      <div class="btns"><a class="btn" href="mailto:rajeev.sah@gmail.com?subject=Imagineers%27%20corner%20-%20I%27m%20interested">I’m interested</a></div>
+    </div>
+    <div class="card">
+      <h2>Supporting the project</h2>
+      <p>The game is free, and we would like to keep it that way. We are finding out whether people would like to chip in.</p>
+      <p>If enough people do, we will set up a donation link. Most of what comes in would go to a real-world charity, and the rest would fuel the kids’ creativity and new levels. We will name the charity before accepting anything.</p>
+      <p class="note">There is no way to donate yet. Reviews and kind words are the best support for now.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>Tyra’s Emotional Journey is a hobby project by an independent developer.</footer>
-</main>
+<section id="contact" aria-labelledby="contact-h">
+  <div class="card">
+    <h2 id="contact-h">Say hello</h2>
+    <p>Questions, ideas, feedback, or a feeling you think Tyra should meet next? Write to us at <a href="mailto:rajeev.sah@gmail.com">rajeev.sah@gmail.com</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; 2026 Tyra’s Emotional Journey. A family project.</span>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="mailto:rajeev.sah@gmail.com">Contact</a>
+</footer>
+
+</div>
 </body>
 </html>
